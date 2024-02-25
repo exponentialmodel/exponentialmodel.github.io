@@ -1,0 +1,161 @@
+*{
+    font-family: "Didact Gothic", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+background-image:  radial-gradient(#dbdbdb 0.8px, transparent 0.8px), radial-gradient(#dbdbdb 0.8px, #ffffff 0.8px);
+background-size: 18px 18px;
+background-position: 0 0,9px 9px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    max-width: 80%;
+}
+
+.inputs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    
+}
+
+input::-webkit-inner-spin-button{
+    display: none;
+}
+
+input{
+    padding: 0.4em;
+    margin: 0.8em;
+    outline: none;
+    border: none;
+    border-bottom: 1.5px #909090 solid;
+    background-color: transparent;
+    width: 100%;
+ }
+
+input:hover{
+    border-bottom: 1.5px #000 solid;
+}
+
+.configuration{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.configuration input{
+    width: 3.3em;
+    height: 3.3em;
+    text-align: center;
+    padding: 1em;
+    border-radius: 50%;
+    border: 1.5px #909090 solid;
+    margin-left: 0;
+}
+
+.configuration input:hover{
+    border: 1.5px #000 solid;
+}
+
+select{
+ border: 1.5px #909090 solid;
+ background-color: transparent;
+ padding: 0.5em;
+ border-radius: 0.2em;
+ outline: none;
+ 
+}
+
+select:hover{
+    border: 1.5px #000 solid;
+}
+
+button{
+    padding: 0.7em;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+    margin-left: 0.8em;
+    
+}
+
+i{
+    color: #fff;
+}
+
+.results{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 0;
+    padding-top: 0;
+    
+}
+
+h2{
+    margin-top: 0;
+    padding-top: 0;   
+}
+
+.time-result{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0.4em;
+    padding: 0.2em;
+    width: 100%;
+}
+
+.time-result i{
+    color: #000;
+    font-size: 1.4em;
+}
+
+span{
+    margin-left: 0.5em;
+    font-size: 1.4em;
+}
+
+@media screen and (max-width: 890px){
+
+.inputs{
+width: 80%;
+}
+
+.results{
+width: 80%;
+}
+
+}
+
+@media screen and (max-width: 580px){
+
+body{
+background-image:  radial-gradient(#dbdbdb 0.5px, transparent 0.5px), radial-gradient(#dbdbdb 0.5px, #ffffff 0.5px);
+
+}
+
+.inputs{
+flex-direction: column;
+}
+
+}

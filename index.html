@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Exponential - Estimate time to reach follower goal</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="followers, goal estimation, exponential growth, time prediction, social media growth, follower count, social media analytics, audience expansion, engagement strategy, online presence, digital influence, marketing metrics, social media strategy, follower milestone">
+<meta name="description" content="Predict the time it will take to reach your social media followers goal using exponential growth estimation with this handy tool.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<script src="script.js"></script>
+<script src="lan.js"></script>
+</head>
+<body>
+    <h1>Exponential</h1>
+    <p>Predict how long it will take you to reach your social media followers goal</p>
+    <section class="inputs">
+        <input type="number" placeholder="Initial followers" id="pi">
+        <input type="number" placeholder="Current followers" id="pa">
+        <input type="number" placeholder="Desired followers" id="sd">
+    </section>
+    <section class="configuration">
+            <input type="number" placeholder="Time" id="time">
+            <select>
+                <option value="s">Seconds</option>
+                <option value="m">Minutes</option>
+                <option value="h">Hours</option>
+                <option value="d">Days</option>
+            </select>
+            <button><i class="bi bi-stars"></i>Predict</button>
+    </section>
+    <p id="error"></p>
+    <section class="results" id="results">
+        <h2>You will reach your goal in:</h2>
+        <div class="time-result">
+            <i class="bi bi-lightning-charge"></i>
+            <span id="sec">0</span>
+            <span>Seconds</span>
+        </div>
+        <div class="time-result">
+            <i class="bi bi-hourglass-split"></i>
+            <span id="min">0</span>
+            <span>Minutes</span>
+        </div>
+        <div class="time-result">
+            <i class="bi bi-clock"></i>
+            <span id="hours">0</span>
+            <span>Hours</span>
+        </div>
+        <div class="time-result">
+            <i class="bi bi-calendar4-event"></i>
+            <span id="days">0</span>
+            <span>Days</span>
+        </div>
+    </section>
+</body>
+</html>
